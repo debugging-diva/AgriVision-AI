@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+from tensorflow.keras.utils import load_img
+
+image_path = r"C:\Users\sneha\Downloads\archive\PlantVillage\Tomato_healthy"
+
+import os
+
+image_name = os.listdir(image_path)[0]
+
+image = load_img(os.path.join(image_path, image_name))
+
+plt.imshow(image)
+plt.axis("off")
+plt.show()
